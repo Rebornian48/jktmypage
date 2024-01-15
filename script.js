@@ -2,15 +2,15 @@ var rp = document.getElementById("rp");
 var ro = document.getElementById("ro");
 
 rp.onclick = function () {
-  document.getElementById("arrival_count").innerHTML =
+  document.getElementById("arrival_count").textContent =
     Math.floor(Math.random() * 1000).toLocaleString("id") + " kali";
-  document.getElementById("points_1").innerHTML =
+  document.getElementById("points_1").textContent =
     Math.floor(Math.random() * 10000000).toLocaleString("id") + " P";
-  document.getElementById("points_2").innerHTML =
+  document.getElementById("points_2").textContent =
     Math.floor(Math.random() * 10000000).toLocaleString("id") + " P";
-  document.getElementById("bp_1").innerHTML =
+  document.getElementById("bp_1").textContent =
     Math.floor(Math.random() * 10000000).toLocaleString("id") + " P";
-  document.getElementById("bp_2").innerHTML =
+  document.getElementById("bp_2").textContent =
     Math.floor(Math.random() * 10000000).toLocaleString("id") + " P";
 };
 
@@ -104,7 +104,7 @@ ro.onclick = function () {
     "./member/yessica_tamara.jpg",
   ];
   var i = Math.floor(Math.random() * oshimen.length);
-  document.getElementById("pho").innerHTML =
+  document.getElementById("pho").textContent =
     '<img src="' + foto[i] + '" alt="' + oshimen[i] + '">';
-  document.getElementById("namaoshi").innerHTML = oshimen[i];
+  document.getElementById("namaoshi").textContent = oshimen[i];
 };
